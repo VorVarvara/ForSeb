@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complain-o-Meter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the nonsence website!</h1>
+        <p>Go-to space for whatever happened when u came over.</p>
+    </header>
+
+    <main>
+        <section id="seb-lies">
+            <h2>Seb's Lies vs V's Truths</h2>
+            <p>See whether Seb's stories are believable</p>
+            <button onclick="voteLies()">See Seb’s Lies</button>
+        </section>
+
+        <section id="date-night">
+            <h2>Hangouts Rating</h2>
+            <p>Rating of hangout moments</p>
+            <button onclick="rateHangouts()">Rating of our Hangouts</button>
+        </section>
+
+        <section id="bad-girl">
+            <h2>Bad Girl Complaints</h2>
+            <p>Log of my “bad girl” moments</p>
+            <button onclick="logBadGirlComplaints()">See the Log</button>
+        </section>
+
+        <section id="spicy">
+            <h2>Want to see some spicy pics?</h2>
+            <p>A little picture surprise...</p>
+            <button onclick="showSpicyPicsTease()">Click for the surprise!</button>
+        </section>
+	
+<div class="tulip-tracker">
+    <h2>Days Since i thought i'd get my flowers</h2>
+    <p>Time has flown by, and still no tulips...</p>
+    <p id="tulipCountdown"></p>
+</div>
+
+<script>
+    const startDate = new Date("2025-02-14T00:00:00").getTime(); // Starting point: February 14, 2025
+    
+    const countdownFunction = setInterval(function() {
+        const now = new Date().getTime(); // Get current date and time
+        const distance = now - startDate; // Calculate time difference (in milliseconds)
+        
+        const daysPassed = Math.floor(distance / (1000 * 60 * 60 * 24)); // Convert milliseconds to days
+        
+        document.getElementById("tulipCountdown").innerHTML = `${daysPassed} days since the day i thought i'll get them. Still waiting for tulips!`;
+    }, 1000);
+</script>
+
+
+    </main>
+
+    <footer>
+        <p>Created by Varvara (or V if u can't say my name right...) - For Seb</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
