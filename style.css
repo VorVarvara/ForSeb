@@ -1,0 +1,56 @@
+/* General Page Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffebf0; /* Light pink for a playful vibe */
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Headers */
+h1 {
+    font-size: 2.5em;
+    margin: 20px;
+    color: #d63384; /* Fun pink */
+    text-shadow: 2px 2px #ff99c8;
+}
+
+/* Main Content */
+main {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Buttons */
+button {
+    background-color: #ff69b4; /* Hot pink */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1.2em;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #d63384;
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #777;
+}
+
+/* Special Effects */
+.hidden {
+    display: none;
+}

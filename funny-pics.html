@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funny Pics</title>
+	<link rel="stylesheet" href="style.css">
+    <style>
+    
+        main {
+            margin-top: 20px;
+            text-align: center;
+            width: 80%;
+            max-width: 1000px;
+        }
+
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        .gallery img {
+            width: 100%; /* Ensures images fill the container */
+            max-width: 250px; /* Prevents images from getting too big */
+            height: 400px; /* Keeps uniform height */
+            object-fit: cover; /* Maintains aspect ratio and prevents stretching */
+            border-radius: 10px;
+            margin: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .gallery img:hover {
+            transform: rotate(-3deg) scale(1.05);
+        }
+		
+		.gallery video{
+			width: 100%; /* Ensures images fill the container */
+            max-width: 250px; /* Prevents images from getting too big */
+            height: 400px; /* Keeps uniform height */
+            object-fit: cover; /* Maintains aspect ratio and prevents stretching */
+            border-radius: 10px;
+            margin: 10px;
+            transition: transform 0.3s ease-in-out;
+		}
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Funny Pics</h1>
+    </header>
+
+    <main>
+        <p>Enjoy these funny pics of me while we wait for the tulips! (hint hint... 😏)</p>
+
+        <div class="gallery-container">
+            <div class="gallery">
+                <img src="funny1.jpg" alt="Funny Pic 1">
+                <img src="funny2.jpg" alt="Funny Pic 2">
+                <img src="funny3.jpg" alt="Funny Pic 3">
+                <video controls>
+                    <source src="funny-video.MOV" type="video/mp4">
+                </video>
+            </div>
+        </div>
+<br>
+        <button onclick="goBack()">Go Back</button>
+    </main>
+
+    <footer>
+        <p>Made with love (and tulips to come).</p>
+    </footer>
+
+    <script>
+        function goBack() {
+                window.location.href = "UrSurprise.html"; // Back to the surprise page
+            }
+        
+    </script>
+
+</body>
+</html>
+

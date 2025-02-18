@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bad Girl?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Oh? Did i already say that I'm a bad girl?</h1>
+    </header>
+
+    <main>
+        <p>Someone’s been sending mixed signals… so let's clear things up.</p>
+        
+        <p><em>Click below to reveal what kind of "bad girl" I really am.</em></p>
+
+        <button onclick="reveal()">Reveal</button>
+
+        <p id="result" style="display:none; font-size: 24px; margin-top: 20px;">Bad at saying the truth, bad at cooking (debatable), bad at liking spicy food… just a walking problem 🤭</p>
+
+        <button onclick="goBack()">Go Back</button>
+    </main>
+
+    <footer>
+        <p>Still waiting on those tulips tho 🌷</p>
+    </footer>
+
+    <script>
+        function reveal() {
+            document.getElementById("result").style.display = "block";
+        }
+
+        function goBack() {
+            window.location.href = "UrSurprise.html";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seb's Lies vs. Varvara's Truths</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Seb's Lies vs. V's Truths</h1>
+    </header>
+
+    <main>
+        <p>Which one is true?</p>
+		<p>Lets see...</p>
+        <ul>
+            <li>"The taxi was cheaper in the morning" - <button onclick="vote('lie')">Lie</button></li>
+			<br>
+            <li>"You was shaking when we first met" - <button onclick="vote('truth')">Truth</button></li>
+			<br>
+            <li>"This sauce is great, try it!" - <button onclick="vote('lie')">Lie</button></li>
+			<br>
+			<li>"You walk too fast" - <button onclick="vote('truth')">Truth</button></li>
+			<br>
+			<li>"I will cook for u" - <button onclick="vote('lie')">Lie</button></li>
+        </ul>
+<br>
+		
+		<button onclick="voteLies()">Only Truths</button>
+<script>
+    function voteLies() {
+        const randomLies = [
+            "Seb has a big ego",
+            "V never lies... except when she says she's not hungry.",
+            "Seb's idea of a hangout is 'Slim's Chicken,' no question."
+        ];
+        
+        alert(randomLies[Math.floor(Math.random() * randomLies.length)]);
+    }
+</script>
+<br>
+<br>
+		
+        <button onclick="goBack()">Go Back</button>
+    </main>
+
+    <footer>
+		<p>So dont lie pls, the truth always wins</p>
+	</footer>
+	 <script>
+        function goBack() {
+            window.location.href = "UrSurprise.html";
+        }
+    </script>
+	</body>
+</html>
